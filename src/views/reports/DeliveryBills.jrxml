@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.0.final using JasperReports Library version 6.19.0-646c68931cebf1a58bc65c4359d1f0ca223c5e94  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DeliveryBills" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e5964534-1152-4761-9286-ea439276cb33">
+	<parameter name="deliveryId" class="java.lang.String"/>
+	<parameter name="driverId" class="java.lang.String"/>
+	<parameter name="orderId" class="java.lang.String"/>
+	<parameter name="deliveryPrice" class="java.lang.Double"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="136" splitType="Stretch">
+			<staticText>
+				<reportElement x="188" y="-11" width="160" height="36" uuid="49bba2eb-ae08-48b6-b801-ab85b5cb992f"/>
+				<textElement textAlignment="Center">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Burger Hut]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="25" width="377" height="28" uuid="262a7954-d5de-4627-a888-78b80ef7ac13"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[life is too short to miss out on double cheese burgers]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="192" y="61" width="135" height="30" uuid="569fe5f4-87c9-402e-b071-0c2a0a9caf16"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Delivery Service]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-20" y="87" width="595" height="1" uuid="bf5d42e6-8060-4b7e-813d-392e50c992e8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="1" y="95" width="56" height="22" uuid="fe6b5ecf-420d-4c4a-a85c-74eb83dcc8a8"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="53" y="95" width="133" height="30" uuid="2861738a-7d8b-4419-bdc3-bf96533b37d5"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-20" y="121" width="595" height="1" uuid="bc1d099a-6601-4834-b373-3e676df72fd9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="457" y="95" width="56" height="22" uuid="ec06a89d-ae9c-4db8-878a-d5c96ec4aecc"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Time :]]></text>
+			</staticText>
+			<textField pattern="HH:mm">
+				<reportElement x="507" y="95" width="125" height="30" uuid="23c0125b-a182-49d3-a15a-1f6b668a81f6"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="101" splitType="Stretch">
+			<staticText>
+				<reportElement x="12" y="6" width="76" height="28" uuid="d2fc4341-9b03-47a1-a5d6-0f6020efda09"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[deliveryId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="157" y="6" width="70" height="30" uuid="ee7ac076-63fd-4573-b433-45a6c4fe9e47"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[driverId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="5" width="100" height="30" uuid="8d419537-97d7-443f-931f-6762220a9e85"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[deliveryPrice]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="312" y="6" width="60" height="30" uuid="79b20d52-faf2-432a-859d-49dd8b46fe3a"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[orderId]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="23" y="59" width="100" height="30" uuid="6f2ae7de-7d43-48a4-951c-388d03e44b2a"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deliveryId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="318" y="62" width="100" height="30" uuid="0c531543-138b-4f87-ace5-7e06e211e301"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{driverId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="166" y="61" width="100" height="30" uuid="687d25b0-a8c6-4385-8de0-69eab615ed9d"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{orderId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="492" y="61" width="100" height="30" uuid="eb494266-9c0f-45e4-a84d-19feca10f176"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deliveryPrice}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="52" splitType="Stretch">
+			<staticText>
+				<reportElement x="6" y="19" width="154" height="23" uuid="e64ce855-c5bb-463f-b264-2bce2038bd36"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Customer's Signature : ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="154" y="35" width="130" height="1" uuid="387efbdb-2d74-4342-b041-13480f0d1187">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="314" y="20" width="131" height="23" uuid="c705544e-a7ee-4ee1-ba43-cee8bef7485a"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Driver's Signature : ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="436" y="36" width="130" height="1" uuid="451666d8-cf5e-4f80-8da4-ecab7040e477">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="110" splitType="Stretch">
+			<staticText>
+				<reportElement x="242" y="9" width="88" height="18" uuid="e1c38d56-3951-49d2-ad7c-d6e08897e0bf"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Thank You !]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="244" y="30" width="80" height="20" uuid="8c5ee9fc-7fc0-49dc-a1a2-c0f6f44634ef"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Come Again]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="198" y="49" width="195" height="20" uuid="2572b529-67f7-4b24-a32c-d43da9662b21"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[No/04,Kuruduwatte,Colombo - 07]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="179" y="70" width="233" height="20" uuid="3aa64194-02b7-49f3-b09b-29ff2243700c"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Tel-no : +94 114 852 963 / +94 110 456 789]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="90" width="181" height="20" uuid="7fe1da8f-17ed-4e5d-a4c0-ff19f017dda5"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[burgerhutsrilanka@gmail.com]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="HomeContext" prefHeight="565.0" prefWidth="425.0" style="-fx-background-color: #30336b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddMealFormController">
+   <children>
+      <JFXTextField fx:id="txtMealID" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="65.0" layoutY="137.0" onKeyReleased="#textFieldValidationOnAction" prefHeight="42.0" prefWidth="298.0" promptText="Meal ID" style="-fx-prompt-text-fill: white;" unFocusColor="#fffdfd" />
+      <JFXTextField fx:id="txtMealName" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="65.0" layoutY="224.0" onKeyReleased="#textFieldValidationOnAction" prefHeight="42.0" prefWidth="298.0" promptText="Meal Name" style="-fx-prompt-text-fill: white;" unFocusColor="#fffdfd" />
+      <JFXTextField fx:id="txtMealQty" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="65.0" layoutY="311.0" onKeyReleased="#textFieldValidationOnAction" prefHeight="42.0" prefWidth="298.0" promptText="Qty" style="-fx-prompt-text-fill: white;" unFocusColor="#fffdfd" />
+      <JFXTextField fx:id="txtMealPrice" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="65.0" layoutY="398.0" onKeyReleased="#textFieldValidationOnAction" prefHeight="42.0" prefWidth="298.0" promptText="Price" style="-fx-prompt-text-fill: white;" unFocusColor="#fffdfd" />
+      <JFXButton fx:id="btnAddMeal" layoutX="137.0" layoutY="483.0" onAction="#AddMealOnAction" prefHeight="42.0" prefWidth="154.0" style="-fx-border-color: white; -fx-border-radius: 10;" text="Add Meal" textFill="WHITE" />
+      <Label layoutX="132.0" layoutY="33.0" text="Add New Meal" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

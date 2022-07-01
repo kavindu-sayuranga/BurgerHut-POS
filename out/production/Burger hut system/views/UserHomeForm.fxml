@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1011.0" prefWidth="1926.0" style="-fx-background-color: #b4b9f4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserHomeFormController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="1011.0" prefWidth="323.0" style="-fx-background-color: #30336b;">
+         <children>
+            <AnchorPane prefHeight="65.0" prefWidth="322.0" style="-fx-background-color: #6f77cc;" />
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="19.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/user.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutY="65.0" prefHeight="115.0" prefWidth="323.0" style="-fx-background-color: #4c53ae;">
+               <children>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="16.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/food.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="118.0" layoutY="42.0" text="Burger Hut" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="118.0" layoutY="78.0" prefHeight="5.0" prefWidth="147.0" />
+               </children>
+            </AnchorPane>
+            <JFXButton layoutX="-2.0" layoutY="178.0" onAction="#dashboardOnAction" prefHeight="63.0" prefWidth="325.0" text="DASHBOARD" textFill="WHITE" />
+            <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="29.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/HOME.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="-2.0" layoutY="302.0" onAction="#melasOnAction" prefHeight="63.0" prefWidth="325.0" text="MEALS" textFill="WHITE" />
+            <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="29.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/meals.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="-2.0" layoutY="364.0" onAction="#customersOnAction" prefHeight="63.0" prefWidth="325.0" text="CUSTOMER" textFill="WHITE" />
+            <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="29.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/customer.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="-2.0" layoutY="426.0" onAction="#deliveryOnAction" prefHeight="63.0" prefWidth="325.0" text="DELIVERY" textFill="WHITE" />
+            <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="29.0" layoutY="438.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/deliver.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="-2.0" layoutY="240.0" onAction="#ordersOnAction" prefHeight="63.0" prefWidth="325.0" text="ORDERS" textFill="WHITE" />
+            <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="29.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/cart.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="93.0" layoutY="19.0" text="User" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="-3.0" layoutY="488.0" onAction="#settingsOnAction" prefHeight="63.0" prefWidth="325.0" text="SETTINGS" textFill="WHITE" />
+      <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="28.0" layoutY="505.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/settings.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="-3.0" layoutY="550.0" onAction="#logoutOnAction" prefHeight="63.0" prefWidth="325.0" text="LOG OUT" textFill="WHITE" />
+      <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="28.0" layoutY="566.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/logout.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="321.0" prefHeight="67.0" prefWidth="1604.0" style="-fx-background-color: #30336b;" />
+      <AnchorPane layoutX="321.0" layoutY="66.0" prefHeight="115.0" prefWidth="1604.0" style="-fx-background-color: #7f87d0;">
+         <children>
+            <Label layoutX="34.0" layoutY="37.0" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="HomeContext" layoutX="358.0" layoutY="198.0" prefHeight="784.0" prefWidth="1544.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="111.0" layoutY="36.0" prefHeight="211.0" prefWidth="364.0" style="-fx-background-color: #227093; -fx-background-radius: 20;" />
+            <Label layoutX="596.0" layoutY="36.0" prefHeight="211.0" prefWidth="364.0" style="-fx-background-color: #ff5252; -fx-background-radius: 20;" />
+            <Label layoutX="1088.0" layoutY="36.0" prefHeight="211.0" prefWidth="364.0" style="-fx-background-color: #218c74; -fx-background-radius: 20;" />
+            <Label layoutX="201.0" layoutY="57.0" text="Total Orders" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="697.0" layoutY="60.0" text="Total Meals" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="1172.0" layoutY="60.0" text="Total Earning" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalOrders" layoutX="262.0" layoutY="143.0" text="25" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalMeals" layoutX="754.0" layoutY="145.0" text="18" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalEarning" layoutX="1189.0" layoutY="145.0" text="Rs.6740.00" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <LineChart fx:id="LineChartOrder" layoutX="437.0" layoutY="544.0" prefHeight="400.0" prefWidth="1391.0" title="Earning of Orders in a Month">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </LineChart>
+      <Label layoutX="389.0" layoutY="18.0" text="Date :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="1705.0" layoutY="18.0" text="Time :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="462.0" layoutY="18.0" text="2022-03-30" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="1791.0" layoutY="18.0" text="10:25:14" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

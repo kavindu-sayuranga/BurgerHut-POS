@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="HomeContext" prefHeight="565.0" prefWidth="425.0" style="-fx-background-color: #30336b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomerFormController">
+   <children>
+      <JFXTextField fx:id="txtCusID" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="64.0" layoutY="101.0" onKeyReleased="#textFieldValidationOnAction" prefHeight="42.0" prefWidth="298.0" promptText="Customer ID" style="-fx-prompt-text-fill: white;" unFocusColor="#fffdfd" />
+      <JFXTextField fx:id="txtCusName" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="64.0" layoutY="176.0" onKeyReleased="#textFieldValidationOnAction" prefHeight="42.0" prefWidth="298.0" promptText="Customer Name" style="-fx-prompt-text-fill: white;" unFocusColor="#fffdfd" />
+      <JFXTextField fx:id="txtCusAddress" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="64.0" layoutY="258.0" onKeyReleased="#textFieldValidationOnAction" prefHeight="42.0" prefWidth="298.0" promptText="Address" style="-fx-prompt-text-fill: white;" unFocusColor="#fffdfd" />
+      <JFXTextField fx:id="txtCusNIC" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="64.0" layoutY="340.0" onKeyReleased="#textFieldValidationOnAction" prefHeight="42.0" prefWidth="298.0" promptText="NIC" style="-fx-prompt-text-fill: white;" unFocusColor="#fffdfd" />
+      <JFXTextField fx:id="txtCusPhone" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="64.0" layoutY="422.0" onKeyReleased="#textFieldValidationOnAction" prefHeight="42.0" prefWidth="298.0" promptText="Phone Number" style="-fx-prompt-text-fill: white;" unFocusColor="#fffdfd" />
+      <JFXButton fx:id="btnAddCustomer" layoutX="136.0" layoutY="500.0" onAction="#AddCustomerOnAction" prefHeight="42.0" prefWidth="154.0" style="-fx-border-color: white; -fx-border-radius: 10;" text="Add Customer" textFill="WHITE" />
+      <Label layoutX="114.0" layoutY="17.0" text="Add New Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="SignupContext" prefHeight="641.0" prefWidth="875.0" style="-fx-background-color: #30336b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignupFormController">
+   <children>
+      <ImageView fitHeight="641.0" fitWidth="466.0" layoutX="447.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/2.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="63.0" layoutY="16.0" text="Sign Up" textFill="#fff8f8">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="60.0" text="Please fill your information below" textFill="#fff8f8">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="510.0" layoutY="52.0" prefHeight="71.0" prefWidth="274.0" text="Burger Hut " textFill="WHITE">
+         <font>
+            <Font name="Arial Bold Italic" size="49.0" />
+         </font>
+      </Label>
+      <Label layoutX="534.0" layoutY="129.0" text="life is too short to miss out" textFill="WHITE" />
+      <Label layoutX="581.0" layoutY="150.0" text="on double cheeseburgers" textFill="WHITE" />
+      <Separator layoutX="65.0" layoutY="86.0" prefHeight="5.0" prefWidth="328.0" />
+      <JFXTextField fx:id="txtUserName" focusColor="WHITE" labelFloat="true" layoutX="66.0" layoutY="125.0" onKeyReleased="#textFieldValidationOnAction" prefHeight="40.0" prefWidth="294.0" promptText="Name" style="-fx-prompt-text-fill: #ffffff; -fx-text-fill: #ffffff;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtEmail" focusColor="WHITE" labelFloat="true" layoutX="65.0" layoutY="272.0" onKeyReleased="#textFieldValidationOnAction" prefHeight="40.0" prefWidth="294.0" promptText="Email" style="-fx-prompt-text-fill: #ffffff; -fx-text-fill: #ffffff;" unFocusColor="WHITE" />
+      <JFXPasswordField fx:id="pwdPassword" focusColor="WHITE" labelFloat="true" layoutX="66.0" layoutY="344.0" onKeyReleased="#passwordFieldValidationOnAction" prefHeight="40.0" prefWidth="294.0" promptText="Password" style="-fx-prompt-text-fill: #ffffff; -fx-text-fill: #ffffff;" unFocusColor="WHITE" />
+      <JFXPasswordField fx:id="pwdConformPassword" focusColor="WHITE" labelFloat="true" layoutX="69.0" layoutY="414.0" onKeyReleased="#passwordFieldValidationOnAction" prefHeight="40.0" prefWidth="294.0" promptText="Conform Password" style="-fx-prompt-text-fill: #ffffff; -fx-text-fill: #ffffff;" unFocusColor="WHITE" />
+      <JFXComboBox fx:id="cmbSelectType" focusColor="WHITE" layoutX="69.0" layoutY="479.0" prefHeight="40.0" prefWidth="294.0" promptText="Select Type" style="-fx-prompt-text-fill: #ffffff; -fx-text-fill: #ffffff;" unFocusColor="WHITE" />
+      <JFXButton fx:id="btnSignup" layoutX="109.0" layoutY="554.0" onAction="#signupOnAction" prefHeight="40.0" prefWidth="206.0" style="-fx-border-color: white; -fx-border-radius: 10;" text="Sign up!" textFill="WHITE" />
+      <JFXTextField fx:id="txtName" focusColor="WHITE" labelFloat="true" layoutX="66.0" layoutY="201.0" onKeyReleased="#textFieldValidationOnAction" prefHeight="40.0" prefWidth="294.0" promptText="Username" style="-fx-prompt-text-fill: #ffffff; -fx-text-fill: #ffffff;" unFocusColor="WHITE" />
+      <Label fx:id="lblBack" layoutX="164.0" layoutY="611.0" onMouseClicked="#lblBack" text="Back to Login...." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="HomeContext" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #30336b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogoutFormController">
+   <children>
+      <Label layoutX="41.0" layoutY="35.0" prefHeight="41.0" prefWidth="510.0" style="-fx-border-color: white;" text="   Log Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="132.0" layoutY="163.0" text="Are you sure you want to log out?" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Circle fill="#30336b" layoutX="102.0" layoutY="181.0" radius="11.0" stroke="#45b05c" strokeType="INSIDE" />
+      <JFXButton fx:id="btnYes" layoutX="169.0" layoutY="240.0" onAction="#btnYesOnAction" prefHeight="41.0" prefWidth="101.0" style="-fx-border-color: white; -fx-background-color: #ffb142;" text="Yes" textFill="WHITE" />
+      <JFXButton fx:id="btnNo" layoutX="354.0" layoutY="240.0" onAction="#btnNoOnAction" prefHeight="41.0" prefWidth="101.0" style="-fx-border-color: white; -fx-background-color: #d1ccc0;" text="No" textFill="WHITE" />
+   </children>
+</AnchorPane>
